@@ -12,10 +12,10 @@ app.use(express.json());
 
 // Database connection
 const db = mysql.createConnection({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'user',
-  password: process.env.DB_PASSWORD || 'password',
-  database: process.env.DB_NAME || 'angulardb'
+  host: process.env.DB_HOST || 'databasetestpub.cysrpetj7pax.us-east-1.rds.amazonaws.com',
+  user: process.env.DB_USER || 'admin',
+  password: process.env.DB_PASSWORD || 'alaadmin',
+  database: process.env.DB_NAME || 'databasetestpub'
 });
 
 db.connect((err) => {
